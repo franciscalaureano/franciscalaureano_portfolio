@@ -1,0 +1,110 @@
+  /* Geral */
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+   body {
+    overflow-x: hidden;
+    width:auto;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 125% 70% 60%;
+    grid-template-areas: 
+    "header header"
+    "textHero img"
+    "textW textA"
+    "slide slide";
+    background-color: #EAE8E2;
+   } 
+
+   header{
+    width: 100vw;
+ }
+
+ nav{
+  width:auto;
+ }
+
+ ul{
+  float: right;
+ }
+
+ li{
+  display: inline;
+ }
+
+   
+   h1{
+    font-family: lust,serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#D18F89;
+   }
+
+   p{
+    font-family: 'poppins',sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color:#A1BFE9;
+   }
+   
+   button{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 0.5vw;
+    z-index: 1;
+   }
+
+    #color_buttons{
+ 
+     margin-top: 1.5vw;
+     margin-right: 2vw;
+     grid-column-start: 2; 
+     grid-row-start: 1;
+  }
+/*-----------------------PINK----------------------------*/
+li #button_pink{
+  background-color:#D18F89;
+  opacity:100%;
+  border: 3px solid #B5756F;
+}
+
+#logo_pink{
+  margin: 1.5vw;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  width: 3%;
+  height: auto;
+} 
+
+
+/*-----------------------BLUE----------------------------*/
+li #button_blue{
+  background-color:#A1BFE9;
+  opacity: 30%;
+  border: none;
+} 
+
+
+/*------------------------LILAC---------------------------*/
+li #button_lilac{
+  background-color:#B8A5E1;
+  opacity: 30%;
+  border: none;
+}
+
+@media only screen and (max-device-width: 1512px) {
+ body{ 
+  height: 850px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 80% 40% 50%;
+  }
+}
+
+
+
+   

@@ -1,0 +1,10 @@
+#h1_about{
+    color: #D18F89;
+   opacity:30%; 
+   font-size: 15vh;
+   grid-column-start: 2;
+   grid-row-start: 3;
+   justify-self: center;
+   align-self: start;
+   padding-top: 10vh;
+}

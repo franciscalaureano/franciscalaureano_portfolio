@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/geral.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/hero.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/work.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/about.css"></link>
+    <link rel="stylesheet" href="https://use.typekit.net/yzr0six.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Francisca Laureano</title>
+</head>
+<body>
+<!------------------------------->
+<!--------------Header----------->
+<!------------------------------->
+<header>
+ <nav>
+    <img id="logo_pink" alt="Francisca Laureano Logo" width="auto" height="auto">
+     <ul>
+         <section id="color_buttons">
+         <li><button type="button" id="button_pink" ></button></li>
+         <li><button type="button" id="button_blue" ></button></li>
+         <li><button type="button" id="button_lilac" ></button></li>
+         </section>
+     </ul>
+ </nav>
+</header>
+<!------------------------------->
+<!--------------Hero------------->
+<!------------------------------->
+<section id="text">
+ <h1 id="h1_hero">hi</h1>
+
+ <p id="p_hero">I’m Francisca,<br> 
+    and it’s a pleasure 
+    to meet you</p>
+</section>
+<img id="img_hero_laureano_pink" alt="Francisca Laureano image" >  
+<!------------------------------->
+<!--------------work------------->
+<!------------------------------->
+
+<h1 id="h1_work">work</h1>
+<h1 id="h1_about">about</h1>
+<div class="slider">
+  <div class="circular-slider">
+    <div class="wrapper">
+    <div id="center" class="slider_content"> 
+          <div id="slide1"class="slide_item"><img src="img/w_feels_good.png" alt="img"/></div>
+         <div  id="slide2"class="slide_item"><img src="img/w_feels_good.png" alt="img"/></div>
+          <div id="slide3"class="slide_item"><img src="img/w_feels_good.png" alt="img"/></div>
+          <div id="slide4"class="slide_item"><img src="img/w_feels_good.png" alt="img"/></div>
+          <div id="slide5"class="slide_item"><img src="img/w_feels_good.png" alt="img"/></div>
+          <div class="slide_item"><img src="img/w_feels_good.png" alt="img"/></div>
+    </div>
+</div> 
+
+<div class="controls selection-off">
+  <div class="left selection-off" onclick="turnLeft()"><button type="button" id="button_slider" ></button><i class="fas fa-caret-left"></i></div>
+  <div class="right selection-off" onclick="turnRight()"><button type="button" id="button_slider" ></button><i class="fas fa-caret-right"></i></div>
+</div>
+
+<script src="js/change_color.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>
