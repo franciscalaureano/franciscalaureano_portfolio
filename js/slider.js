@@ -1,5 +1,6 @@
-const mediaQueryIpad = window.matchMedia('(max-width: 1100px)')
-const mediaQueryPc = window.matchMedia('(max-width: 1512px)')  
+
+
+//
   var htmlCollection = document.getElementsByClassName('slide_item');
   //getting elements by class name into an HTMLCollection
   
@@ -19,7 +20,9 @@ const mediaQueryPc = window.matchMedia('(max-width: 1512px)')
   if (mediaQueryIpad.matches) {
     // Then trigger an alert
      radiusLength = 350;
-  } 
+  } else if(mediaQueryMobile.matches){
+    radiusLength = 100;
+  }
   //
   
     for(var i=0; i<itemsId.length; i++){

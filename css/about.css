@@ -12,13 +12,14 @@
 @media only screen and (max-device-width: 1100px) {
 
     #h1_about{
-      padding-top: 5vh;
+      padding-top: 6vh;
     }
 
 }
 
 @media only screen and (max-device-width: 400px) {
   #h1_about{
-    grid-area: textA;
+    grid-area: tAbout;
+    font-size: 6.5vh;
   }
 }

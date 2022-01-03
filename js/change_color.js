@@ -9,6 +9,9 @@ let h1Hero= document.getElementsByTagName('h1')[0];
 let pHero= document.getElementsByTagName('p')[0];
 let imgHero= document.getElementById('img_hero_laureano_pink');
 imgHero.src="img/laureano_hero_pink.png";
+if(mediaQueryMobile.matches){
+    imgHero.src="img/mobile_laureano_hero_pink.png";
+  }
 //
 let h1Work= document.getElementsByTagName('h1')[1];
 //
@@ -37,6 +40,9 @@ buttonP.onclick = function(){
 	h1Hero.style.color = "#D18F89";
     pHero.style.color = "#A1BFE9";
     imgHero.src="img/laureano_hero_pink.png";
+    if(mediaQueryMobile.matches){
+        imgHero.src="img/mobile_laureano_hero_pink.png";
+      }
     //
     h1Work.style.color = "#D18F89";
     //
@@ -67,6 +73,9 @@ buttonB.onclick = function(){
 	h1Hero.style.color = "#A1BFE9";
     pHero.style.color = "#D18F89";
     imgHero.src= "img/laureano_hero_blue.png"; 
+    if(mediaQueryMobile.matches){
+        imgHero.src="img/mobile_laureano_hero_pink.png";
+      }
     //
     h1Work.style.color = "#A1BFE9";
     //
@@ -97,6 +106,9 @@ buttonL.onclick = function(){
 	h1Hero.style.color = "#B8A5E1";
     pHero.style.color = "#D18F89";
     imgHero.src="img/laureano_hero_lilac.png";
+    if(mediaQueryMobile.matches){
+        imgHero.src="img/mobile_laureano_hero_pink.png";
+      }
     //
     h1Work.style.color = "#B8A5E1";
     //
