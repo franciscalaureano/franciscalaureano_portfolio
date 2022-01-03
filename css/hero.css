@@ -50,3 +50,27 @@
  
 
 }
+
+
+@media only screen and (max-device-width: 1076px) {
+
+  #img_hero_laureano_pink{
+    width: 100%;
+    padding-top: 15%;
+    padding-right: 0;
+  }
+  #p_hero{
+    font-size: 4vh;
+  }
+
+  #text{
+    width: 65%;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: center;
+    align-self: center;
+  }
+   
+ 
+
+}

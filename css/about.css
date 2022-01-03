@@ -8,3 +8,11 @@
    align-self: start;
    padding-top: 10vh;
 }
+
+@media only screen and (max-device-width: 1076px) {
+
+    #h1_about{
+      padding-top: 0;
+    }
+
+}

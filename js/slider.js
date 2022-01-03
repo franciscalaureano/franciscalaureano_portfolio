@@ -1,4 +1,5 @@
-  
+const mediaQueryIpad = window.matchMedia('(max-width: 1076px)')
+const mediaQueryPc = window.matchMedia('(max-width: 1512px)')  
   var htmlCollection = document.getElementsByClassName('slide_item');
   //getting elements by class name into an HTMLCollection
   
@@ -12,9 +13,17 @@
     var radianSectionDeg = sectionDeg*Math.PI*2/360;
   //transforming from degrees into radians
   
-    var radiusLength = 550;
+  var radiusLength = 550;
   //the distance between the center of the circle to the element
   //edit this number to increase/decrease that distance
+  if (mediaQueryIpad.matches) {
+    // Then trigger an alert
+    var radiusLength = 350;
+  } else if(mediaQueryPc.matches) {
+    // Then trigger an alert
+    var radiusLength = 550;
+  }
+  //
   
     for(var i=0; i<itemsId.length; i++){
       itemsId[i].style.top = radiusLength*Math.sin(radianSectionDeg*i-1.5708)-50+'px';

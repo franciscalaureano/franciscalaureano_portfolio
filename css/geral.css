@@ -106,6 +106,15 @@ li #button_lilac{
   }
 }
 
+@media only screen and (max-device-width: 1076px) {
+  body{ 
+    overflow-x: hidden;
+    height: 600px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 10% 140% 25% 10%;
+    }
+}
+
 
 
    

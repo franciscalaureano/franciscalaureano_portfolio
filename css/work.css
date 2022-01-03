@@ -91,3 +91,33 @@ padding-top: 10vh;
     }
 
   }
+
+  @media only screen and (max-device-width: 1076px) {
+
+    #h1_work{
+      padding-top: 0;
+    }
+
+    .slider{
+      width: 90vw;
+      height: 70vh;
+      
+    }
+    .circular-slider {
+      height: 600px;
+    }
+
+    .circular-slider .wrapper {
+      height: 15vw;
+      padding-top: 55%;
+    }
+    #img_slide{
+      width:40vw;
+      height: auto;
+    }
+  
+    .controls{
+      top: 198%;
+    }
+
+  }
