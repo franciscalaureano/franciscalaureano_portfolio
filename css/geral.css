@@ -97,7 +97,7 @@ li #button_lilac{
   border: none;
 }
 
-@media only screen and (max-device-width: 1512px) {
+@media only screen and (max-device-width: 1515px) {
  body{ 
   overflow-x: hidden;
   height: 850px;
@@ -106,7 +106,7 @@ li #button_lilac{
   }
 }
 
-@media only screen and (max-device-width: 1076px) {
+@media only screen and (max-device-width: 1100px) {
   body{ 
     overflow-x: hidden;
     height: 600px;
@@ -116,5 +116,20 @@ li #button_lilac{
 }
 
 
+
+@media only screen and (max-device-width: 400px) {
+  body{ 
+    overflow-x: hidden;
+    height: 600px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 10% 50% 80% 25% 10%;
+      grid-template-areas: 
+    "header header"
+    "textHero textHero"
+    "imgHero imgHero"
+    "textW textA"
+    "slide slide";
+    }
+}
 
    

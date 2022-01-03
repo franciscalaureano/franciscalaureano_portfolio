@@ -121,3 +121,14 @@ padding-top: 10vh;
     }
 
   }
+
+  @media only screen and (max-device-width: 400px) {
+    #h1_work{
+      grid-area: textW;
+      justify-self: center;
+      align-self: start;
+      padding-top: 10vh;
+      
+      }
+      
+  }

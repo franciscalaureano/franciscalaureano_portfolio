@@ -16,3 +16,9 @@
     }
 
 }
+
+@media only screen and (max-device-width: 400px) {
+  #h1_about{
+    grid-area: textA;
+  }
+}
