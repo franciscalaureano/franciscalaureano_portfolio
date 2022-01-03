@@ -10,7 +10,7 @@
     height: 1000px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 125% 70% 60%;
+    grid-template-rows: 10% 125% 70% 160%;
     grid-template-areas: 
     "header header"
     "textHero img"
@@ -115,7 +115,7 @@ li #button_lilac{
     }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 500px) {
   body{ 
     overflow-x: hidden;
     height: 600px;

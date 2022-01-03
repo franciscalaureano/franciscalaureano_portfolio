@@ -1,5 +1,9 @@
 
 
+window.onscroll = function () {
+  scrollRotate();
+};
+
 //
   var htmlCollection = document.getElementsByClassName('slide_item');
   //getting elements by class name into an HTMLCollection
@@ -8,17 +12,19 @@
   //turning the HTMLcollection into an array for easier manipulation of the elements
   
     var sectionDeg = 360/itemsId.length;
+  
   //sectioning the (imaginary) circle into a number of section equalling the number of items
   //it can be used on more elements
   
     var radianSectionDeg = sectionDeg*Math.PI*2/360;
+ 
   //transforming from degrees into radians
   
   var radiusLength = 550;
   //the distance between the center of the circle to the element
   //edit this number to increase/decrease that distance
   if (mediaQueryIpad.matches) {
-    // Then trigger an alert
+    
      radiusLength = 350;
   } else if(mediaQueryMobile.matches){
     radiusLength = 100;

@@ -10,14 +10,18 @@ justify-self: center;
 align-self: start;
 padding-top: 10vh;
 
+
 }
 
 .slider{
+ 
     width: 1000vw;
     height: 50vh;
     grid-area: slide;
     justify-self: center;
     overflow: hidden;
+    z-index: 5;
+    
 }
 
 .circular-slider {
@@ -27,6 +31,7 @@ padding-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    
   }
   
   .circular-slider .wrapper {
@@ -35,9 +40,10 @@ padding-top: 10vh;
     justify-content: center;
     position: relative;
     box-sizing: border-box;
-    padding-top: 5%;
+    padding-top: 55%;
     overflow: hidden;
     width: 100%;
+   
   }
   .slider_content{
     position: absolute;
@@ -89,7 +95,10 @@ padding-top: 10vh;
     .slider{
       height: 70vh;
     }
-
+    .circular-slider .wrapper {
+      height: 15vh;
+      padding-top: 155%;
+    }
   }
 
   @media only screen and (max-device-width: 1100px) {
@@ -122,7 +131,7 @@ padding-top: 10vh;
 
   }
 
-  @media only screen and (max-device-width: 400px) {
+  @media only screen and (max-device-width: 500px) {
     #h1_work{
       grid-area: tWork;
       font-size: 6.5vh;

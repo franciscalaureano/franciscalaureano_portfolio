@@ -78,7 +78,7 @@
   }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 500px) {
 
   #img_hero{
     grid-area: imgHero;

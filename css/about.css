@@ -17,7 +17,7 @@
 
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 500px) {
   #h1_about{
     grid-area: tAbout;
     font-size: 6.5vh;
