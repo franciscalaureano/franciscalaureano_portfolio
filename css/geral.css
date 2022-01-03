@@ -111,7 +111,7 @@ li #button_lilac{
     overflow-x: hidden;
     height: 600px;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 10% 140% 25% 10%;
+      grid-template-rows: 12% 110% 25% 10%;
     }
 }
 

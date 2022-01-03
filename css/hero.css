@@ -54,15 +54,18 @@
 
   #img_hero_laureano_pink{
     width: 100%;
+    height: auto;
     padding-top: 15%;
-    padding-right: 0;
+    right: 0;
+    overflow: hidden;
   }
+
   #p_hero{
     font-size: 4vh;
   }
 
   #text_hero{
-    width: 65%;
+    width: 60%;
     grid-column-start: 1;
     grid-row-start: 2;
     justify-self: center;

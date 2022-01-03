@@ -95,16 +95,16 @@ padding-top: 10vh;
   @media only screen and (max-device-width: 1100px) {
 
     #h1_work{
-      padding-top: 0;
+      padding-top: 5vh;
     }
 
     .slider{
       width: 90vw;
-      height: 70vh;
+      height: 83vh;
       
     }
     .circular-slider {
-      height: 600px;
+      height: 650px;
     }
 
     .circular-slider .wrapper {
@@ -117,7 +117,7 @@ padding-top: 10vh;
     }
   
     .controls{
-      top: 198%;
+      top: 182%;
     }
 
   }

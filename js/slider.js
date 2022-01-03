@@ -18,11 +18,8 @@ const mediaQueryPc = window.matchMedia('(max-width: 1512px)')
   //edit this number to increase/decrease that distance
   if (mediaQueryIpad.matches) {
     // Then trigger an alert
-    var radiusLength = 350;
-  } else if(mediaQueryPc.matches) {
-    // Then trigger an alert
-    var radiusLength = 550;
-  }
+     radiusLength = 350;
+  } 
   //
   
     for(var i=0; i<itemsId.length; i++){
