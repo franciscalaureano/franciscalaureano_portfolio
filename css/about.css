@@ -9,6 +9,14 @@
    padding-top: 10vh;
 }
 
+@media only screen and (max-device-width: 1550px) {
+
+  #h1_about{
+    padding-top: 15vh;
+  }
+
+}
+
 @media only screen and (max-device-width: 1100px) {
 
     #h1_about{
@@ -19,6 +27,8 @@
 
 @media only screen and (max-device-width: 500px) {
   #h1_about{
+    
+    padding-top: 2vh;
     grid-area: tAbout;
     font-size: 6.5vh;
   }

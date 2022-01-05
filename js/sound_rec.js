@@ -34,11 +34,13 @@ function setup() {
     // Something is there
     // Get it as a string, you can also get JSON with more info
     //console.log(speechRec);
-    if (speechRec.resultValue && speechRec.resultString == "show" ) {
-    
+   
+    if (mediaQueryMobile.matches && speechRec.resultValue && speechRec.resultString == "hi" ) {
       h1Hero.style.display= "none";
-    } else if(speechRec.resultValue && speechRec.resultString == "hide"){
+      pHero.style.display= "block";
+    } else if(mediaQueryMobile.matches && speechRec.resultValue && speechRec.resultString == "it's my pleasure"){
       h1Hero.style.display= "block";
+      pHero.style.display= "none";
     }
   }
 }

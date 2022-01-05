@@ -13,13 +13,13 @@ padding-top: 10vh;
 
 }
 
-.slider{
+
+/*.slider{
   -ms-scroll-snap-points-x: snapInterval(0%, 100%);
     width: 1000vw;
     height: 50vh;
     grid-area: slide;
     justify-self: center;
-    
     z-index: 5;
     
 }
@@ -59,8 +59,10 @@ padding-top: 10vh;
   display:flex;
   justify-content: center;
   align-items: center;
- 
+  filter: grayscale(100%);
   }
+
+
 
   .controls{
     position: absolute;
@@ -90,15 +92,40 @@ padding-top: 10vh;
     text-align: center;
   }
 
+ #work_title{
+    color:black;
+    width: 50%;
+    height: auto;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+  }*/
 
-  @media only screen and (max-device-width: 1512px) {
-    .slider{
-      height: 70vh;
+  
+
+
+  @media only screen and (max-device-width: 1550px) {
+    #h1_work{
+      padding-top: 15vh;
+    }
+    /*.slider{
+      padding-top: 8%;
+      height: 5vh;
+    }
+    .circular-slider{
+      height: 85vh;
     }
     .circular-slider .wrapper {
-      height: 15vh;
-      padding-top: 155%;
+      height: 0vh;
+      padding-top: 255%;
     }
+
+    .controls{
+      top: 195%;
+    }*/
+
   }
 
   @media only screen and (max-device-width: 1100px) {
@@ -107,7 +134,7 @@ padding-top: 10vh;
       padding-top: 6vh;
     }
 
-    .slider{
+   /* .slider{
       width: 90vw;
       height: 84vh;
       
@@ -126,30 +153,37 @@ padding-top: 10vh;
     }
   
     .controls{
-      top: 185%;
-    }
+      top: 180%;
+    }*/
 
   }
 
   @media only screen and (max-device-width: 500px) {
     #h1_work{
+     
+      padding-top: 2vh;
       grid-area: tWork;
       font-size: 6.5vh;
     }
     
-    .slider{
-      padding-top: 15%;
+  /*  .slider{
+      width: 100%;
+      padding-top: 0%;
       grid-area: slider;
-      height: 35vh;
+      height: 30vh;
   }
 
   .circular-slider {
-    height: 55vh;
+    width: 100%;
+    margin: 0;
+    height: 60vh;
+    padding-bottom: 42%;
   }
 
   .circular-slider .wrapper {
+    width: 100%;
     height: 0vh;
-    padding-top:220%;
+    padding-top:205%;
   }
 
   #img_slide{
@@ -158,6 +192,6 @@ padding-top: 10vh;
   }
 
   .controls{
-    top: 150%;
-  }
+    top: 180%;
+  }*/
   }

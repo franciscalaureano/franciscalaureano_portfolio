@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
    }
+   
+  
 
    body {
     overflow-x: hidden;
@@ -10,21 +12,23 @@
     height: 1000px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 125% 70% 160%;
+    grid-template-rows: 10% 125% 40% 100% 20%;
     grid-template-areas: 
     "header header"
     "textHero img"
     "textW textA"
-    "slide slide";
+    "slide slide"
+    "footer footer";
     background-color: #EAE8E2;
    } 
-
-   header{
-    width: 100vw;
+   footer{
+   grid-area: footer;
+   background-color: cadetblue;
+   
  }
 
- nav{
-  width:auto;
+  #top{
+    grid-area: header;
  }
 
  ul{
@@ -43,6 +47,13 @@
     color:#D18F89;
    }
 
+   h2{
+    font-family: lust,serif;
+    font-weight: 700;
+    font-style: normal;
+    color:black;
+   }
+
    p{
     font-family: 'poppins',sans-serif;
     font-weight: 300;
@@ -56,7 +67,7 @@
     border-radius: 50%;
     cursor: pointer;
     margin-right: 0.5vw;
-    z-index: 1;
+    z-index: 2;
    }
 
     #color_buttons{
@@ -97,12 +108,20 @@ li #button_lilac{
   border: none;
 }
 
+
+
 @media only screen and (max-device-width: 1515px) {
  body{ 
   overflow-x: hidden;
   height: 850px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 80% 40% 50%;
+    grid-template-columns: 50%[col-start] 50%[col-start];
+    grid-template-rows: 7% [row-start] 85%[row-start] 23%[row-start] 50%[row-start] 30%[row-start];
+    grid-template-areas:
+    "header header"
+    "titleH imgH"
+    "titleW titleA"
+    "slide slide"
+    "titleS titleS";
   }
 }
 
@@ -111,7 +130,7 @@ li #button_lilac{
     overflow-x: hidden;
     height: 600px;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 12% 110% 25% 10%;
+      grid-template-rows: 12% 120% 25% 10%;
     }
 }
 
@@ -120,7 +139,7 @@ li #button_lilac{
     overflow-x: hidden;
     height: 600px;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 10% 20% 105% 25% 10%;
+      grid-template-rows: 15% 30% 105% 25% 10%;
       grid-template-areas: 
       "header header"
       "tHero tHero"

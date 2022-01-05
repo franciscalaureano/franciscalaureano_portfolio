@@ -1,9 +1,4 @@
 
-
-window.onscroll = function () {
-  scrollRotate();
-};
-
 //
   var htmlCollection = document.getElementsByClassName('slide_item');
   //getting elements by class name into an HTMLCollection
@@ -20,15 +15,16 @@ window.onscroll = function () {
  
   //transforming from degrees into radians
   
-  var radiusLength = 550;
+  var radiusLength = 560;
   //the distance between the center of the circle to the element
   //edit this number to increase/decrease that distance
   if (mediaQueryIpad.matches) {
     
      radiusLength = 350;
-  } else if(mediaQueryMobile.matches){
+  } else  if (mediaQueryMobile.matches) {
+    
     radiusLength = 100;
-  }
+ }
   //
   
     for(var i=0; i<itemsId.length; i++){
@@ -40,9 +36,13 @@ window.onscroll = function () {
   //x = (r * cos(θ) => left
   //y = r * sin(θ) => top
   //1.5708 is a radian used put the first element on top - basically 90deg
-  
+  //current angle
   var rotation = 0;
   var center = document.getElementById('center');
+  var slideOn ;
+  
+   
+  
   
   //we are going to rotate the wrapper of the elements
   
@@ -50,8 +50,8 @@ window.onscroll = function () {
     rotation = rotation + radianSectionDeg;
       center.style.transform = 'rotate('+ rotation +'rad)';
     for(var i=0; i<itemsId.length; i++){
-      itemsId[i].style.transform = 'rotate('+ -rotation +'rad)';
-    }
+    //  itemsId[i].style.transform = 'rotate('+ -rotation +'rad)';
+  }
   }
   
   function turnRight(){
@@ -59,8 +59,16 @@ window.onscroll = function () {
       center.style.transform = 'rotate('+rotation+'rad)';
     for(var i=0; i<itemsId.length; i++){
       itemsId[i].style.transform = 'rotate('+ -rotation +'rad)';
+      
     }
   }
-  center.style.gridArea= "slides";
+  
+  
+  
+  center.style.gridArea= "slide";
   //both these functions rotate the wrapper
   //they rotate the inner elements too, to keep them straight
+  
+// slilder content
+
+

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/geral.css"></link>
     <link rel="stylesheet" type="text/css" href="css/hero.css"></link>
     <link rel="stylesheet" type="text/css" href="css/work.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/slider.css"></link>
     <link rel="stylesheet" type="text/css" href="css/about.css"></link>
     <link rel="stylesheet" href="https://use.typekit.net/yzr0six.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -16,8 +17,7 @@
 <!------------------------------->
 <!--------------Header----------->
 <!------------------------------->
-<header>
- <nav>
+<div id="top">
     <img id="logo_pink" alt="Francisca Laureano Logo" width="auto" height="auto">
      <ul>
          <section id="color_buttons">
@@ -26,8 +26,7 @@
          <li><button type="button" id="button_lilac" ></button></li>
          </section>
      </ul>
- </nav>
-</header>
+    </div>
 <!------------------------------->
 <!--------------Hero------------->
 <!------------------------------->
@@ -38,8 +37,9 @@
     and it’s a pleasure 
     to meet you</p>
 </section>
-<section id="img_hero">
-<img id="img_hero_laureano_pink" alt="Francisca Laureano image" >  
+<section id="vid_hero">
+<!--<img id="img_hero_laureano_pink" alt="Francisca Laureano image" >  -->
+<div id="vid_hero_laureano_pink"></div>
 </section>
 <!------------------------------->
 <!--------------work------------->
@@ -47,36 +47,111 @@
 
 <h1 id="h1_work">work</h1>
 <h1 id="h1_about">about</h1>
+
+
+<!---->
+
+<section class="page-wrapper" >
+  <div class="slider"> 
+    <ul class="slider-list">  
+      <!--element 1-->
+      <li class="slider-list__item"> 
+        <span class="main__element">
+          <img src="img/w_feels_good.png" />
+        </span>
+        <span class="more__element">
+          <span class="content">
+            <span class="headline"><h2>Feels Good</h2></span>
+            </span>
+          </span>
+        </span>
+       </li>
+      <!--element 2-->
+      <li class="slider-list__item">
+        <span class="main__element">
+          <img src="img/w_feels_good.png" />
+        </span>      
+       <span class="more__element">
+          <span class="content">
+            <span class="headline"><h2>Feels Good</h2></span>
+          </span>
+        </span>
+       </li>
+      <!--element 3-->
+       <li class="slider-list__item">
+        <span class="main__element">
+          <img src="img/w_feels_good.png" />
+        </span>
+       <span class="more__element">
+          <span class="content">
+            <span class="headline"><h2>Feels Good</h2></span>
+          </span>
+        </span>
+       </li>
+    </ul>
+    
+    <div class="slider__points-bar">
+      <a class="points-control"></a>
+      <a class="points-control"></a>
+      <a class="points-control"></a>
+    </div>
+    
+    <div class="slider__controls">
+      <a class="slider__arrow slider__arrow_prev"><button type="button" id="button_left"></button></a>
+      <a class="slider__arrow slider__arrow_next"><button type="button" id="button_right"></button></a>
+    </div>
+
+  </div>      
+
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+
+
+<!--<h1 id="work_title">Feels Good</h1>
+
 <div class="slider">
   <div class="circular-slider">
-    <div class="wrapper">
+    <div class="wrapper"> 
     <div id="center" class="slider_content"> 
+      
           <div id="slide1"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
          <div  id="slide2"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
           <div id="slide3"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
           <div id="slide4"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
           <div id="slide5"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
-          <div class="slide_item"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
+          <div id="slide6"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
     </div>
 </div> 
 
+
+
 <div class="controls selection-off">
-  <div class="left selection-off" onmouseover="turnLeft()"><button type="button" id="button_slider" ></button><i class="fas fa-caret-left"></i></div>
-  <div class="right selection-off" onmouseover="turnRight()"><button type="button" id="button_slider" ></button><i class="fas fa-caret-right"></i></div>
-</div>
-
-
+  <div class="left selection-off" onclick="turnLeft()"><button type="button" id="button_left"></button><i class="fas fa-caret-left"></i></div>
+  <div class="right selection-off" onclick="turnRight()"><button type="button" id="button_right" ></button><i class="fas fa-caret-right"></i></div>
+</div>-->
 
 
 <script src="js/media_query.js"></script>
+<script src="js/lottie.js"></script>
+<script src="js/variables.js"></script>
+
+<script src="js/slider2.js"></script>
+
+<script src="js/video_play.js"></script>
 <script src="js/change_color.js"></script>
-<script src="js/slider.js"></script>
+<!--<script src="js/slider.js"></script>-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
 <script src="libraries/p5.speech.js"></script>
 <script src="js/sound_rec.js"></script>
 
-
+<footer>
+  <section id="content"></section>
+</footer>
 </body>
+
+
 </html>
