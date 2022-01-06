@@ -19,24 +19,17 @@ function setup() {
     // Something is there
     // Get it as a string, you can also get JSON with more info
     //console.log(speechRec);
-    if(speechRec.resultValue && speechRec.resultString == "hi"){
-      pHero.style.display= "none";
-      pHidenHero.style.display= "block";
-    }else
-    if(speechRec.resultValue && speechRec.resultString == "pink") {
-        
-    }else
-    if(speechRec.resultValue && speechRec.resultString == "blue") {
-    
-    }else
-    if(speechRec.resultValue && speechRec.resultString == "lilac") {
-    
-    }
-    else
-     if (mediaQueryMobile.matches && speechRec.resultValue && speechRec.resultString == "hi" ) {
+    if (mediaQueryMobile.matches && speechRec.resultValue && speechRec.resultString == "hi" ) {
       h1Hero.style.display= "none";
       pHero.style.display= "block";
-    } else 
+      sayHi.style.display="none";
+    } 
+    else
+    if(mediaQueryPcL.matches && speechRec.resultValue && speechRec.resultString == "hi"){
+      pHero.style.display= "none";
+      pHidenHero.style.display= "block";
+    }
+     else 
     if(mediaQueryMobile.matches && speechRec.resultValue && speechRec.resultString == "it's my pleasure"){
       h1Hero.style.display= "block";
       pHero.style.display= "none";

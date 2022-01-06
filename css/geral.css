@@ -84,7 +84,7 @@
 @media only screen and (max-device-width: 1366px) {
   body{ 
    overflow-x: hidden;
-   height: 850px;
+ 
      grid-template-columns: 50% 50%;
      grid-template-rows: 10% 110% 30% 70% 20% ;
      grid-template-areas:
@@ -100,7 +100,7 @@
 @media only screen and (max-device-width: 1100px) {
   body{ 
     overflow-x: hidden;
-    height: 600px;
+  
       grid-template-columns: 50% 50%;
       grid-template-rows: 12% 135% 25% 90% 20%;
       grid-template-areas:
@@ -115,9 +115,21 @@
 @media only screen and (max-device-width: 900px) {
   body{ 
     overflow-x: hidden;
-    height: 600px;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 12% 115% 25% 80% 20%;
+      grid-template-rows: 10% 100% 25% 80% 20%;
+      grid-template-areas:
+     "header header"
+     "titleH imgH"
+     "titleW titleA"
+     "slide slide"
+     "footer footer";
+    }
+}
+@media only screen and (max-device-width: 800px) {
+  body{ 
+    overflow-x: hidden;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 10% 75% 25% 50% 10%;
       grid-template-areas:
      "header header"
      "titleH imgH"
@@ -130,15 +142,16 @@
 @media only screen and (max-device-width: 500px) {
   body{ 
     overflow-x: hidden;
-    height: 600px;
+  
       grid-template-columns: 50% 50%;
-      grid-template-rows: 15% 30% 105% 25% 10%;
+      grid-template-rows: 15% 35% 110% 15% 70% 10%;
       grid-template-areas: 
       "header header"
       "tHero tHero"
       "imgHero imgHero"
       "tWork tAbout"
-      "slider slider";
+      "slide slide"
+      "footer footer";
     }
  
     button{
@@ -151,6 +164,45 @@
     
 
 }
+
+@media only screen and (max-device-width: 400px) {
+  body{ 
+    overflow-x: hidden;
+
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 15% 35% 80% 15% 63% 10%;
+      grid-template-areas: 
+      "header header"
+      "tHero tHero"
+      "imgHero imgHero"
+      "tWork tAbout"
+      "slide slide"
+      "footer footer";
+    }
+ 
+    
+
+}
+
+@media only screen and (max-device-width: 340px) {
+  body{ 
+    overflow-x: hidden;
+ 
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 15% 30% 70% 15% 63% 10%;
+      grid-template-areas: 
+      "header header"
+      "tHero tHero"
+      "imgHero imgHero"
+      "tWork tAbout"
+      "slide slide"
+      "footer footer";
+    }
+ 
+    
+
+}
+
 
 
    

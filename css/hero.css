@@ -137,10 +137,35 @@
   }
 }
 
+@media only screen and (max-device-width: 800px) {
+  #text_hero{
+    width:70%;
+  }
+  #say_hi{
+    top:35%;
+    left:35%;
+  }
+  #p_hiden_hero{
+    font-size: 1vh;
+  }
+
+  #p_hero{
+   
+    font-size: 2.5vh;
+  }
+  #h1_hero{
+   
+    font-size: 15vh;
+  }
+}
+
+
 @media only screen and (max-device-width: 500px) {
 
   #vid_hero{
+    
     grid-area: imgHero;
+    grid-row-start: 3;
     justify-self: start;
     align-self: start;
     padding-top: 0%;
@@ -156,6 +181,8 @@
     grid-area: tHero;
     justify-self: center;
     align-self: center;
+    place-self: center;
+    width: 60%;
   }
 
   #h1_hero{
@@ -169,5 +196,34 @@
     font-size: 3vh;
   }
 
+  #sm_id{
+    margin-left: 29%;
+    place-self: center ;
+    height: auto;
+    padding-left: 0%;
+  }
 
+  .social_media_icons{
+    padding-top: 5%;
+    width: 10%;
+    
+  }
+
+  #say_hi{
+    position: absolute;
+    top:15%;
+    left:12%;
+    width: 25%;
+  }
+
+}
+@media only screen and (max-device-width: 340px) {
+  #text_hero{
+    
+    width: 70%;
+  }
+  #p_hero{
+   
+    font-size: 2.5vh;
+  }
 }

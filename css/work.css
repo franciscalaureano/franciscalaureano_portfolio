@@ -30,12 +30,31 @@ padding-top: 10vh;
     }
   }
 
-  @media only screen and (max-device-width: 500px) {
+  @media only screen and (max-device-width: 800px) {
+  
     #h1_work{
-     
-      padding-top: 2vh;
+      font-size: 10vh;
+    }
+
+
+  }
+
+  @media only screen and (max-device-width: 500px) {
+    #h1_work_a{
       grid-area: tWork;
+      padding-top: 2vh;
+    }
+    #h1_work{
       font-size: 6.5vh;
     }
+
+
+  }
+
+  @media only screen and (max-device-width: 340px) {
+    #h1_work{
+      font-size: 5.5vh;
+    }
+
 
   }

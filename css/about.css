@@ -35,11 +35,26 @@
 
 }
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-device-width: 800px) {
+
   #h1_about{
-    
+    font-size: 10vh;
+  }
+
+}
+
+@media only screen and (max-device-width: 500px) {
+  #h1_about_a{
     padding-top: 2vh;
     grid-area: tAbout;
+  }
+  #h1_about{
     font-size: 6.5vh;
+  }
+}
+@media only screen and (max-device-width: 340px) {
+
+  #h1_about{
+    font-size: 5.5vh;
   }
 }

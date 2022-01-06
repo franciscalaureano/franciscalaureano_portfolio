@@ -32,6 +32,7 @@ let pHero= document.getElementsByTagName('p')[0];
 let pHidenHero= document.getElementsByTagName('p')[1];
 
 // Social Icons
+let smId= document.getElementById('sm_id');
 // insta
 let insta =document.getElementById('insta');
 insta.src="img/instagram.png";
