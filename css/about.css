@@ -1,18 +1,28 @@
+#h1_about_a{
+  grid-column-start: 2;
+   grid-row-start: 3;
+   justify-self: center;
+   align-self: start;
+  }
+
 #h1_about{
     color: #D18F89;
    opacity:30%; 
    font-size: 15vh;
-   grid-column-start: 2;
-   grid-row-start: 3;
-   justify-self: center;
-   align-self: start;
    padding-top: 10vh;
+   transition-duration: 0.5s; 
 }
+
+#h1_about:hover{ 
+ opacity:100%;
+ transition-duration: 0.5s; 
+}
+
 
 @media only screen and (max-device-width: 1550px) {
 
   #h1_about{
-    padding-top: 15vh;
+    padding-top: 5vh;
   }
 
 }
@@ -20,7 +30,7 @@
 @media only screen and (max-device-width: 1100px) {
 
     #h1_about{
-      padding-top: 6vh;
+      padding-top: 0vh;
     }
 
 }

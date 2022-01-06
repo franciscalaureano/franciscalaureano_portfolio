@@ -4,8 +4,6 @@
     padding: 0;
    }
    
-  
-
    body {
     overflow-x: hidden;
     width:auto;
@@ -21,29 +19,24 @@
     "footer footer";
     background-color: #EAE8E2;
    } 
+
    footer{
    grid-area: footer;
-   background-color: cadetblue;
+   background-color: #E0C4BE;
    
  }
-
+ a {
+  text-decoration: none; 
+}
   #top{
     grid-area: header;
  }
 
- ul{
-  float: right;
- }
-
- li{
-  display: inline;
- }
-
-   
    h1{
     font-family: lust,serif;
     font-weight: 700;
     font-style: normal;
+    text-decoration: none !important;
     color:#D18F89;
    }
 
@@ -51,7 +44,7 @@
     font-family: lust,serif;
     font-weight: 700;
     font-style: normal;
-    color:black;
+    color:#1A1717;
    }
 
    p{
@@ -70,67 +63,67 @@
     z-index: 2;
    }
 
-    #color_buttons{
-     margin-top: 1.5vw;
-     margin-right: 2vw;
-     grid-column-start: 2; 
-     grid-row-start: 1;
-  }
-/*-----------------------PINK----------------------------*/
-li #button_pink{
-  background-color:#D18F89;
-  opacity:100%;
-  border: 3px solid #B5756F;
-}
-
-#logo_pink{
-  margin-top: 1.5vw;
-  margin-left: 1.5vw;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  width: 3%;
-  height: auto;
-} 
-
-
-/*-----------------------BLUE----------------------------*/
-li #button_blue{
-  background-color:#A1BFE9;
-  opacity: 30%;
-  border: none;
-} 
-
-
-/*------------------------LILAC---------------------------*/
-li #button_lilac{
-  background-color:#B8A5E1;
-  opacity: 30%;
-  border: none;
-}
-
+    
 
 
 @media only screen and (max-device-width: 1515px) {
  body{ 
   overflow-x: hidden;
   height: 850px;
-    grid-template-columns: 50%[col-start] 50%[col-start];
-    grid-template-rows: 7% [row-start] 85%[row-start] 23%[row-start] 50%[row-start] 30%[row-start];
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 100% 30% 70% 20% ;
     grid-template-areas:
     "header header"
     "titleH imgH"
     "titleW titleA"
     "slide slide"
-    "titleS titleS";
+    "footer footer";;
   }
 }
+
+@media only screen and (max-device-width: 1366px) {
+  body{ 
+   overflow-x: hidden;
+   height: 850px;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 10% 110% 30% 70% 20% ;
+     grid-template-areas:
+     "header header"
+     "titleH imgH"
+     "titleW titleA"
+     "slide slide"
+     "footer footer";
+   }
+ }
+ 
 
 @media only screen and (max-device-width: 1100px) {
   body{ 
     overflow-x: hidden;
     height: 600px;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 12% 120% 25% 10%;
+      grid-template-rows: 12% 135% 25% 90% 20%;
+      grid-template-areas:
+     "header header"
+     "titleH imgH"
+     "titleW titleA"
+     "slide slide"
+     "footer footer";
+    }
+}
+
+@media only screen and (max-device-width: 900px) {
+  body{ 
+    overflow-x: hidden;
+    height: 600px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 12% 115% 25% 80% 20%;
+      grid-template-areas:
+     "header header"
+     "titleH imgH"
+     "titleW titleA"
+     "slide slide"
+     "footer footer";
     }
 }
 
@@ -147,9 +140,7 @@ li #button_lilac{
       "tWork tAbout"
       "slider slider";
     }
-  ul{
-  margin: 0;
-   }
+ 
     button{
       height: 20px;
       width: 20px;
@@ -157,18 +148,7 @@ li #button_lilac{
       cursor: pointer;
       z-index: 1;
      }
-     #color_buttons{
-      margin-top: 4vw;
-      margin-right: 4vw;
-      grid-column-start: 2; 
-      grid-row-start: 1;
-   }
-
-   #logo_pink{
-    margin-top: 4vw;
-    margin-left: 4vw;
-    width: 7%;
-  } 
+    
 
 }
 

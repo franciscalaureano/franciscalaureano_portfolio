@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/geral.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/header.css"></link>
     <link rel="stylesheet" type="text/css" href="css/hero.css"></link>
     <link rel="stylesheet" type="text/css" href="css/work.css"></link>
     <link rel="stylesheet" type="text/css" href="css/slider.css"></link>
@@ -18,46 +19,72 @@
 <!--------------Header----------->
 <!------------------------------->
 <div id="top">
-    <img id="logo_pink" alt="Francisca Laureano Logo" width="auto" height="auto">
-     <ul>
+     <ul id="color_ul">
          <section id="color_buttons">
          <li><button type="button" id="button_pink" ></button></li>
          <li><button type="button" id="button_blue" ></button></li>
-         <li><button type="button" id="button_lilac" ></button></li>
+         <li><button type="button" id="button_lilac" ></button></li>   
          </section>
      </ul>
-    </div>
+
+     <nav>
+      <a href="index.html"><img id="logo_pink" alt="Francisca Laureano Logo" width="auto" height="auto"></a>       
+      <ul>
+         <li><a id="work_link" class="page_link" href="work.html">work</a></li>
+         <li><a id="about_link" class="page_link" href="about.html">about</a></li>
+         <li><a id="contact_link" class="page_link" href="contact.html">contact</a></li>
+       </ul>
+    </nav>
+     
+  </div>
 <!------------------------------->
 <!--------------Hero------------->
 <!------------------------------->
 <section id="text_hero">
  <h1 id="h1_hero">hi</h1>
+ 
+ <img id="say_hi" >
 
  <p id="p_hero">I’m Francisca,<br> 
     and it’s a pleasure 
     to meet you</p>
+
+  <p id="p_hiden_hero"> I am a 20 year old design lover, self portrait artist and a videographer based in Coimbra, Portugal.<br><br> 
+    I started this journey when I was 16 years old, and I have never looked back since then. Photography 
+    was actually the reason why I started studying design, but that is a story for another day ;)</p>
+
+  <div id="sm_id">
+    <a id= "insta_a" >
+    <img class="social_media_icons" id="insta" width="auto" height="auto">
+    </a>
+   <a id= "behance_a" >
+    <img class="social_media_icons" id="behance"width="auto" height="auto" >
+    </a>
+    <a id="linkedin_a">
+    <img class="social_media_icons" id="linkedin"width="auto" height="auto" >
+    </a>
+  </div>
 </section>
 <section id="vid_hero">
 <!--<img id="img_hero_laureano_pink" alt="Francisca Laureano image" >  -->
 <div id="vid_hero_laureano_pink"></div>
 </section>
+
 <!------------------------------->
 <!--------------work------------->
 <!------------------------------->
 
-<h1 id="h1_work">work</h1>
-<h1 id="h1_about">about</h1>
-
+<a id="h1_work_a" href="work.html"><h1 id="h1_work">work</h1></a>
+<a id="h1_about_a" href="about.html"><h1 id="h1_about">about</h1></a>
 
 <!---->
-
 <section class="page-wrapper" >
   <div class="slider"> 
     <ul class="slider-list">  
       <!--element 1-->
       <li class="slider-list__item"> 
         <span class="main__element">
-          <img src="img/w_feels_good.png" />
+          <img id="slide_img" src="img/w_feels_good.png" />
         </span>
         <span class="more__element">
           <span class="content">
@@ -69,7 +96,7 @@
       <!--element 2-->
       <li class="slider-list__item">
         <span class="main__element">
-          <img src="img/w_feels_good.png" />
+          <img id="slide_img" src="img/w_feels_good.png" />
         </span>      
        <span class="more__element">
           <span class="content">
@@ -80,7 +107,7 @@
       <!--element 3-->
        <li class="slider-list__item">
         <span class="main__element">
-          <img src="img/w_feels_good.png" />
+          <img id="slide_img" src="img/w_feels_good.png" />
         </span>
        <span class="more__element">
           <span class="content">
@@ -91,14 +118,14 @@
     </ul>
     
     <div class="slider__points-bar">
-      <a class="points-control"></a>
-      <a class="points-control"></a>
-      <a class="points-control"></a>
+      <a class="points-control"><button id="one"></button></a>
+      <a class="points-control"><button id="two"></button></a>
+      <a class="points-control"><button id="three"></button></a>
     </div>
     
     <div class="slider__controls">
-      <a class="slider__arrow slider__arrow_prev"><button type="button" id="button_left"></button></a>
-      <a class="slider__arrow slider__arrow_next"><button type="button" id="button_right"></button></a>
+      <a class="slider__arrow slider__arrow_prev"></a>
+      <a class="slider__arrow slider__arrow_next"></a>
     </div>
 
   </div>      
@@ -106,51 +133,24 @@
 </section>
 
 
+  <footer id="footer_id">
+  
+  </footer>
+ 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-
-
-<!--<h1 id="work_title">Feels Good</h1>
-
-<div class="slider">
-  <div class="circular-slider">
-    <div class="wrapper"> 
-    <div id="center" class="slider_content"> 
-      
-          <div id="slide1"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
-         <div  id="slide2"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
-          <div id="slide3"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
-          <div id="slide4"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
-          <div id="slide5"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
-          <div id="slide6"class="slide_item"><img id="img_slide" src="img/w_feels_good.png" alt="img"/></div>
-    </div>
-</div> 
-
-
-
-<div class="controls selection-off">
-  <div class="left selection-off" onclick="turnLeft()"><button type="button" id="button_left"></button><i class="fas fa-caret-left"></i></div>
-  <div class="right selection-off" onclick="turnRight()"><button type="button" id="button_right" ></button><i class="fas fa-caret-right"></i></div>
-</div>-->
-
-
 <script src="js/media_query.js"></script>
 <script src="js/lottie.js"></script>
 <script src="js/variables.js"></script>
-
 <script src="js/slider2.js"></script>
-
-<script src="js/video_play.js"></script>
+<script src="js/sound_rec.js"></script>
 <script src="js/change_color.js"></script>
-<!--<script src="js/slider.js"></script>-->
-
+<script src="js/video_play.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
 <script src="libraries/p5.speech.js"></script>
-<script src="js/sound_rec.js"></script>
 
-<footer>
-  <section id="content"></section>
-</footer>
+
 </body>
 
 

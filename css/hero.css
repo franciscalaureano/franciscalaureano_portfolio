@@ -7,6 +7,7 @@
     align-self: start;
     width: 100%;
     z-index:2;
+    overflow: hidden;
   }
 
   #vid_hero_laureano_pink{
@@ -22,6 +23,13 @@
     font-size: 5vh;
     
   }
+  #p_hiden_hero{
+    display: none;
+    font-size: 1.5vh;
+    color:#534D4C;
+    
+    
+  }
 
   #text_hero{
     width: 50%;
@@ -29,7 +37,31 @@
     grid-row-start: 2;
     justify-self: center;
     align-self: center;
+    padding-bottom: 10%;
   }
+
+  #say_hi{
+    position: absolute;
+    top:30%;
+    left:30%;
+    width: 6%;
+    height: auto;
+  }
+ 
+  #sm_id{
+    padding-left: 2%;
+    display: inline;
+  }
+
+  .social_media_icons{
+    padding-top: 5%;
+    padding-right: 5%;
+    width: 8%;
+    height: auto;
+    cursor: pointer;
+    
+  }
+  
 /*---------------------------------------------------*/
 @media only screen and (max-device-width: 1512px) {
 
@@ -49,9 +81,35 @@
     align-self: center;
   }
    
+  #say_hi{
+    position: absolute;
+    top:45%;
+    left:30%;
+    width: 8%;
+    height: auto;
+  }
 
 }
+@media only screen and (max-device-width: 1366px) {
 
+  #vid_hero_laureano_pink{
+    width: 106%; 
+  }
+
+  #say_hi{
+    top:35%;
+    left:35%;
+  }
+
+  #p_hero{
+    font-size: 3.5vh;
+    
+  }
+  #p_hiden_hero{
+    font-size: 1.3vh;
+  }
+
+}
 
 @media only screen and (max-device-width: 1100px) {
 
@@ -67,7 +125,7 @@
   }
 
   #p_hero{
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
 
   #text_hero{

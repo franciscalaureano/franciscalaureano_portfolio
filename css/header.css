@@ -1,0 +1,132 @@
+ul{
+    float: right;
+   }
+
+li{
+    display: inline;
+   }
+
+#color_buttons{
+    margin-top: 1.5vw;
+    margin-right: 2vw;
+    grid-column-start: 2; 
+    grid-row-start: 1;
+ }
+
+nav{
+  width: 100%;
+  height: auto;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+/*Links*/
+ nav ul{
+    float: left;
+    width: 50%;  
+    padding-left: 2vw;  
+    margin-top: 4.2vw;
+   }
+
+nav ul li{ 
+    display: inline;
+    padding-right: 1.5vw;
+   }
+
+nav ul li a{ 
+  text-decoration: none;
+ }
+.page_link{
+    color: #C1BAA4;
+    font-family: 'poppins',sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5vh;  
+}
+
+#work_link{
+  opacity: 50%;
+  transition-duration: 0.5s;
+}
+#work_link:hover{
+  opacity: 100%;
+  transition-duration: 0.5s;
+}
+#about_link{
+  opacity: 50%;
+  transition-duration: 0.5s;
+}
+#about_link:hover{
+  opacity: 100%;
+  transition-duration: 0.5s;
+}
+
+#contact_link{
+  opacity: 50%;
+  transition-duration: 0.5s;
+}
+#contact_link:hover{
+  opacity: 100%;
+  transition-duration: 0.5s;
+}
+
+
+ /*-----------------------PINK----------------------------*/
+li #button_pink{
+    background-color:#D18F89;
+    opacity:100%;
+    border: 3px solid #B5756F;
+  }
+  
+  #logo_pink{
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+    float: left;
+    width: 3%;
+    height: auto;
+  } 
+
+  /*-----------------------BLUE----------------------------*/
+li #button_blue{
+    background-color:#A1BFE9;
+    opacity: 30%;
+    border: none;
+  } 
+  
+  
+  /*------------------------LILAC---------------------------*/
+  li #button_lilac{
+    background-color:#B8A5E1;
+    opacity: 30%;
+    border: none;
+  }
+  
+  @media only screen and (max-device-width: 1100px) {
+    nav ul{
+      margin-top: 3.5vw;
+     }
+  }
+    
+
+  @media only screen and (max-device-width: 500px) {
+    ul{
+    margin: 0;
+     }
+
+    #color_buttons{
+        margin-top: 4vw;
+        margin-right: 4vw;
+        grid-column-start: 2; 
+        grid-row-start: 1;
+    }
+  
+     #logo_pink{
+      margin-top: 4vw;
+      margin-left: 4vw;
+      width: 7%;
+    } 
+  
+  }
+    
+  
+  
