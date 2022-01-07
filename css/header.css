@@ -1,17 +1,14 @@
 
 ul{
-  position: fixed;
- 
-    right: 0%;
-    
+    float: right;
    }
-
 
 li{
     display: inline;
    }
 
 #color_buttons{
+
     margin-top: 1.5vw;
     margin-right: 2vw;
     grid-column-start: 2; 
@@ -23,15 +20,14 @@ nav{
   height: auto;
   grid-column-start: 1;
   grid-row-start: 1;
- 
 }
-
 
 /*Links*/
  nav ul{
-    left: 6vw;
+    float: left;
     width: 50%;  
-    margin-top: 4.2vw;
+    padding-left: 2vw;  
+    margin-top: 4vw;
    }
 
 nav ul li{ 
@@ -47,35 +43,17 @@ nav ul li a{
     font-family: 'poppins',sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 2.5vh;  
+    font-size:3vh;  
 }
 
-#work_link{
+#work_link, #about_link, #contact_link{
   opacity: 50%;
   transition-duration: 0.5s;
 }
-#work_link:hover{
+#work_link:hover,#about_link:hover, #contact_link:hover {
   opacity: 100%;
   transition-duration: 0.5s;
 }
-#about_link{
-  opacity: 50%;
-  transition-duration: 0.5s;
-}
-#about_link:hover{
-  opacity: 100%;
-  transition-duration: 0.5s;
-}
-
-#contact_link{
-  opacity: 50%;
-  transition-duration: 0.5s;
-}
-#contact_link:hover{
-  opacity: 100%;
-  transition-duration: 0.5s;
-}
-
 
  /*-----------------------PINK----------------------------*/
 li #button_pink{
@@ -85,7 +63,6 @@ li #button_pink{
   }
   
   #logo_pink{
-    position: fixed;
     margin-top: 1.5vw;
     margin-left: 1.5vw;
     float: left;
@@ -107,7 +84,15 @@ li #button_blue{
     opacity: 30%;
     border: none;
   }
-  
+  @media only screen and (max-device-width: 1400px) {
+    nav ul{
+      margin-top: 3.5vw;
+     }
+    .page_link{
+      font-size: 4vh;  
+  }
+  }
+    
   @media only screen and (max-device-width: 1100px) {
     nav ul{
       margin-top: 3.5vw;

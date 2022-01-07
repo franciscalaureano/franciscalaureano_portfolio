@@ -82,31 +82,37 @@
   }
    
   #say_hi{
-    position: absolute;
+   
     top:45%;
     left:30%;
     width: 8%;
-    height: auto;
+  
   }
 
 }
 @media only screen and (max-device-width: 1366px) {
 
+  #vid_hero{
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+  }
   #vid_hero_laureano_pink{
-    width: 106%; 
+    width: 100%; 
+    margin-right: 0;
   }
 
   #say_hi{
-    top:35%;
-    left:35%;
+    top:40%;
+    left:25%;
   }
 
   #p_hero{
-    font-size: 3.5vh;
+    font-size: 5vh;
     
   }
   #p_hiden_hero{
-    font-size: 1.3vh;
+    font-size: 2.3vh;
   }
 
 }
