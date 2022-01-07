@@ -30,12 +30,6 @@ buttonP.onclick = function(){
         autoplay:false,
         path: video
     });
-    
-    /*imgHero.src="img/laureano_hero_pink.png";
-    if (mediaQueryMobile.matches) {
-    
-        imgHero.src="img/mobile_laureano_hero_pink.png";
-     }*/
     //
     h1Work.style.color = "#D18F89";
     //
@@ -73,13 +67,6 @@ buttonB.onclick = function(){
         autoplay:false,
         path: video
     });
-    
-
-   /* imgHero.src= "img/laureano_hero_blue.png"; 
-    if (mediaQueryMobile.matches) {
-    
-        imgHero.src="img/mobile_laureano_hero_pink.png";
-     }*/
     //
     h1Work.style.color = "#A1BFE9";
     //
@@ -117,11 +104,6 @@ buttonL.onclick = function(){
         autoplay:false,
         path: video
     });
-   /* imgHero.src="img/laureano_hero_lilac.png";
-    if (mediaQueryMobile.matches) {
-    
-        imgHero.src="img/mobile_laureano_hero_pink.png";
-     }*/
     //
     h1Work.style.color = "#B8A5E1";
     //
