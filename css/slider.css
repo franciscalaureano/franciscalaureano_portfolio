@@ -8,25 +8,7 @@
     height: 70vh;
     overflow: hidden;
   }
-  /*.slider__points-bar{
-   position: relative;
-   bottom: 5%;
-   left: 47%; 
-  }
-  .points-control {
-    opacity: 0.5;
-    top:20%;
-    cursor: pointer;
-  }
-
-  .points-control:hover {
-    opacity: 0.8;
-  }
-
-  .points-control_active {
-    opacity: 1;
-  }*/
-
+  
   .slider__arrow {
     position: absolute;
     top: 50%;

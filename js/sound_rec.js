@@ -16,9 +16,6 @@ function setup() {
 
   // Speech recognized event
   function gotSpeech() {
-    // Something is there
-    // Get it as a string, you can also get JSON with more info
-    //console.log(speechRec);
     if (mediaQueryMobile.matches && speechRec.resultValue && speechRec.resultString == "hi" ) {
       h1Hero.style.display= "none";
       pHero.style.display= "block";

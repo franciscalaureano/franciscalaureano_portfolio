@@ -11,7 +11,7 @@ class Slider {
       this.direction = 1; // -1
       this.baseAnimeSettings = {
         rotation: 45,
-        //duraçãi da animação entre transições
+        //duração da animação entre transições
         duration: 750,
         easing: 'easeInOutCirc'
       };
