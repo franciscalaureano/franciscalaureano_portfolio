@@ -3,7 +3,7 @@ let speech;
 function setup() {
   noCanvas();
   // Create a Speech Recognition object with callback
-  let speechRec = new p5.SpeechRec('en-US', gotSpeech);
+  speechRec = new p5.SpeechRec('en-US', gotSpeech);
   // "Continuous recognition" (as opposed to one time only)
   let continuous = true;
   // If you want to try partial recognition (faster, less accurate)

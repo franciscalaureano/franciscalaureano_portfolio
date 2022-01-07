@@ -9,7 +9,7 @@
 /**
  *  p5.speech
  *  R. Luke DuBois (dubois@nyu.edu)
- *  ABILITY Lab / Integrated Design & Media
+ *  ABILITY Lab / Brooklyn Experimental Media Center
  *  New York University
  *  The MIT License (MIT).
  *
@@ -18,7 +18,7 @@
  *  Web Speech API: https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html
  *  Web Speech Recognition API: https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html
  */
-(function (root, factory) {
+ (function (root, factory) {
   if (typeof define === 'function' && define.amd)
     define('p5.speech', ['p5'], function (p5) { (factory(p5));});
   else if (typeof exports === 'object')
@@ -76,7 +76,7 @@
     if(_dv !== undefined) this.initvoice=_dv;
     if(_callback !== undefined) this.onLoad =_callback;
 
-    var that = this; // aliasing 'this' into a fixed variable
+    var that = this; // some bullshit
 
     // onvoiceschanged() fires automatically when the synthesizer
     // is configured and has its voices loaded.  you don't need
@@ -243,11 +243,11 @@
 
     // make a recognizer object.
     if('webkitSpeechRecognition' in window) {
-      this.rec = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+      this.rec = new webkitSpeechRecognition();
     }
     else {
       this.rec = new Object();
-      console.log("p5.SpeechRec: Speech Recognition not supported in this browser.");
+      console.log("p5.SpeechRec: webkitSpeechRecognition not supported in this browser.");
     }
 
     // first parameter is language model (defaults to empty=U.S. English)
@@ -293,7 +293,7 @@
     // a response from the server.  you can construct an if() around this
     // if you're feeling worried.
     this.resultValue;
-    // resultString:
+    // resultValue:
     // the 'transcript' of the most recently recognized speech as a simple
     // string.  this will be blown out and replaced at every firing of the
     // onresult() callback.
@@ -304,7 +304,7 @@
     // out potentially bogus recognition tokens.
     this.resultConfidence;
 
-    var that = this; // aliasing 'this' into a fixed variable
+    var that = this; // some bullshit
 
     // onresult() fires automatically when the recognition engine
     // detects speech, or times out trying.
@@ -351,13 +351,6 @@
       this.rec.continuous = this.continuous;
       this.rec.interimResults = this.interimResults;
       this.rec.start();
-    }
-  };
-
-  // Add function to stop the speech recognition from continued listening
-  p5.SpeechRec.prototype.stop = function()  {
-    if('webkitSpeechRecognition' in window) {
-      this.rec.stop();
     }
   };
 
