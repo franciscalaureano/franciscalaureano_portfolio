@@ -1,6 +1,11 @@
+
 ul{
-    float: right;
+  position: fixed;
+ 
+    right: 0%;
+    
    }
+
 
 li{
     display: inline;
@@ -18,13 +23,14 @@ nav{
   height: auto;
   grid-column-start: 1;
   grid-row-start: 1;
+ 
 }
+
 
 /*Links*/
  nav ul{
-    float: left;
+    left: 6vw;
     width: 50%;  
-    padding-left: 2vw;  
     margin-top: 4.2vw;
    }
 
@@ -79,6 +85,7 @@ li #button_pink{
   }
   
   #logo_pink{
+    position: fixed;
     margin-top: 1.5vw;
     margin-left: 1.5vw;
     float: left;
