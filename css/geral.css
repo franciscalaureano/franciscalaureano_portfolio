@@ -46,7 +46,6 @@
   src: url('../fonts/Poppins-Regular.ttf');
 }
 
-
    h1{
     font-family: lust,serif;
     font-weight: 700;
@@ -78,9 +77,6 @@
     z-index: 2;
    }
 
-    
-
-
 @media only screen and (max-device-width: 1515px) {
  body{ 
   overflow-x: hidden;
@@ -111,7 +107,6 @@
    }
  }
  
-
 @media only screen and (max-device-width: 1100px) {
   body{ 
     overflow-x: hidden;
@@ -127,19 +122,6 @@
     }
 }
 
-/*@media only screen and (max-device-width: 900px) {
-  body{ 
-    overflow-x: hidden;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 10% 70% 25% 80% 20%;
-      grid-template-areas:
-     "header header"
-     "titleH imgH"
-     "titleW titleA"
-     "slide slide"
-     "footer footer";
-    }
-}*/
 @media only screen and (max-device-width: 900px) {
   body{ 
     overflow-x: hidden;
@@ -159,7 +141,7 @@
     overflow-x: hidden;
       height: 900px;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 15% 25% 60% 10% 45% 10%;
+      grid-template-rows: 10% 25% 50% 10% 40% 10%;
       grid-template-areas: 
       "header header"
       "tHero tHero"
@@ -176,8 +158,6 @@
       cursor: pointer;
       z-index: 1;
      }
-    
-
 }
 
 @media only screen and (max-device-width: 400px) {
@@ -194,9 +174,6 @@
       "slide slide"
       "footer footer";
     }
- 
-    
-
 }
 
 @media only screen and (max-device-width: 340px) {
@@ -213,9 +190,6 @@
       "slide slide"
       "footer footer";
     }
- 
-    
-
 }
 
 
