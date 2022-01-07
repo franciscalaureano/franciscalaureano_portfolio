@@ -138,13 +138,13 @@
      "footer footer";
     }
 }
-
+/*iphone xr*/
 @media only screen and (max-device-width: 500px) {
   body{ 
     overflow-x: hidden;
-  
+      height: 900px;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 15% 35% 110% 15% 70% 10%;
+      grid-template-rows: 15% 25% 75% 15% 46.5% 10%;
       grid-template-areas: 
       "header header"
       "tHero tHero"
@@ -170,7 +170,7 @@
     overflow-x: hidden;
 
       grid-template-columns: 50% 50%;
-      grid-template-rows: 15% 35% 80% 15% 63% 10%;
+      grid-template-rows: 15% 25% 60% 15% 26% 10%;
       grid-template-areas: 
       "header header"
       "tHero tHero"
@@ -187,9 +187,9 @@
 @media only screen and (max-device-width: 340px) {
   body{ 
     overflow-x: hidden;
- 
+    
       grid-template-columns: 50% 50%;
-      grid-template-rows: 15% 30% 70% 15% 63% 10%;
+      grid-template-rows: 8% 20% 50% 10% 24% 10%;
       grid-template-areas: 
       "header header"
       "tHero tHero"

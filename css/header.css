@@ -127,6 +127,17 @@ li #button_blue{
     } 
   
   }
-    
-  
-  
+  @media only screen and (max-device-width: 400px) {
+   
+    .page_link{
+     
+      font-size: 2vh;  
+  }
+  }
+  @media only screen and (max-device-width: 340px) {
+   
+  .page_link{
+   
+    font-size: 2vh;  
+}
+}

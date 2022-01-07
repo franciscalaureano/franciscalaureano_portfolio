@@ -243,3 +243,58 @@
       height: 20vh;
     }
   }
+  @media only screen and (max-device-width: 400px) {
+    .slider {
+      height: 27vh;
+    
+    }
+    .slider-list__item .main__element img {
+      width: 70%;
+      max-width: 250px;
+      top: 35%;
+     
+    }
+    .slider-list__item .more__element {
+      top:30%; 
+    }
+    .slider-list__item .more__element .content .headline {
+      font-size: 18px;
+    }
+   .slider__arrow_prev {
+      left:5%;
+      height: 15vh;
+  
+    }
+    .slider__arrow_next {
+      right: 5%;
+      height: 15vh;
+    }
+  }
+
+  @media only screen and (max-device-width: 340px) {
+    .slider {
+      height: 35vh;
+    
+    }
+    .slider-list__item .main__element img {
+      width: 70%;
+      max-width: 250px;
+      top: 35%;
+     
+    }
+    .slider-list__item .more__element {
+      top:30%; 
+    }
+    .slider-list__item .more__element .content .headline {
+      font-size: 18px;
+    }
+   .slider__arrow_prev {
+      left:5%;
+      height: 15vh;
+  
+    }
+    .slider__arrow_next {
+      right: 5%;
+      height: 15vh;
+    }
+  }

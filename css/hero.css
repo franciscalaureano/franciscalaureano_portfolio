@@ -193,7 +193,7 @@
   #p_hero{
     display: none;
     text-align: center;
-    font-size: 3vh;
+    font-size: 3.3vh;
   }
 
   #sm_id{
@@ -211,19 +211,31 @@
 
   #say_hi{
     position: absolute;
-    top:15%;
-    left:12%;
+    top:20%;
+    left:10%;
     width: 25%;
   }
+
+}
+@media only screen and (max-device-width: 400px) {
+#text_hero{
+  padding-bottom: 0%;
+  width: 70%;
+
+}
 
 }
 @media only screen and (max-device-width: 340px) {
   #text_hero{
     
-    width: 70%;
+    width: 65%;
+  }
+  #h1_hero{
+   
+    font-size: 15vh;
   }
   #p_hero{
    
-    font-size: 2.5vh;
+    font-size: 3.5vh;
   }
 }
