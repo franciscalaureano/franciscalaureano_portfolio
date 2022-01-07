@@ -112,7 +112,7 @@
     overflow-x: hidden;
   
       grid-template-columns: 50% 50%;
-      grid-template-rows: 12% 75% 25% 50% 20%;
+      grid-template-rows: 12% 80% 25% 50% 20%;
       grid-template-areas:
      "header header"
      "titleH imgH"
