@@ -95,8 +95,11 @@ li #button_blue{
     
   @media only screen and (max-device-width: 1100px) {
     nav ul{
-      margin-top: 3.5vw;
+      margin-top: 3.2vw;
      }
+     .page_link{
+      font-size: 3vh;  
+  }
   }
     
 
@@ -117,6 +120,10 @@ li #button_blue{
       margin-left: 4vw;
       width: 7%;
     } 
+
+    .page_link{
+      font-size: 2.5vh;  
+  }
   
   }
   @media only screen and (max-device-width: 400px) {

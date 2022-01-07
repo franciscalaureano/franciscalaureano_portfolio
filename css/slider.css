@@ -241,10 +241,10 @@
      
     }
     .slider-list__item .more__element {
-      top:35%; 
+      top:40%; 
     }
     .slider-list__item .more__element .content .headline {
-      font-size: 20px;
+      font-size: 25px;
     }
     .slider__arrow_prev {
       left:5%;
